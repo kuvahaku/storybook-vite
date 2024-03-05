@@ -10,8 +10,10 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=chpt_8368566a42ed561"
-  },
+    "chromatic": "npx chromatic --project-token=chpt_8368566a42ed561",
+    "acp": "git add . && git commit -m \"$npm_config_message\" && git push origin main && npm run chromatic"
+}
+,
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
